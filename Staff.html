@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Staff - Saidnyan School</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Staff Page Specific Styles */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #2a4d9e;
+            margin-bottom: 30px;
+        }
+        .staff-slider {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 20px;
+            scroll-behavior: smooth;
+        }
+        .staff-slider::-webkit-scrollbar {
+            display: none; /* hide scrollbar */
+        }
+        .staff-card {
+            min-width: 200px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        .staff-card:hover {
+            transform: translateY(-5px);
+        }
+        .staff-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .staff-card h3 {
+            margin: 5px 0;
+            color: #1d3575;
+        }
+        .staff-card p {
+            margin: 0;
+            color: #333;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px){
+            .staff-card { min-width: 150px; }
+            .staff-card img { width: 120px; height: 120px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Our Staff</h1>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="vision.html">Our Vision</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="staff.html">Our Staff</a>
+    <a href="career.html">Career</a>
+    <a href="admission.html">Admission</a>
+</nav>
+
+<!-- Staff Slider -->
+<div class="container">
+    <div class="staff-slider">
+        <div class="staff-card">
+            <img src="images/kashid.jpg" alt="Kashid S.Y">
+            <h3>Kashid S.Y</h3>
+            <p>Principal</p>
+        </div>
+        <div class="staff-card">
+            <img src="images/gandhale.jpg" alt="Gandhale N.D">
+            <h3>Gandhale N.D</h3>
+            <p>Vice Principal</p>
+        </div>
+        <div class="staff-card">
+            <img src="images/jive.jpg" alt="Jive N.">
+            <h3>Jive N.</h3>
+            <p>Secondary Teacher</p>
+        </div>
+        <div class="staff-card">
+            <img src="images/najan.jpg" alt="Najan A.B">
+            <h3>Najan A.B</h3>
+            <p>Secondary Teacher</p>
+        </div>
+        <div class="staff-card">
+            <img src="images/ghule.jpg" alt="Ghule S">
+            <h3>Ghule S.</h3>
+            <p>Secondary Teacher</p>
+        </div>
+        <div class="staff-card">
+            <img src="images/gaikwad.jpg" alt="Gaikwad A.D">
+            <h3>Gaikwad A.D</h3>
+            <p>Primary Head</p>
+        </div>
+        <div class="staff-card">
+            <img src="images/gangarde.jpg" alt="Gangarde A">
+            <h3>Gangarde A</h3>
+            <p>Primary Teacher</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    &copy; 2025 Saidnyan English Medium School, Ashti | All Rights Reserved
+</footer>
+
+</body>
+</html>
